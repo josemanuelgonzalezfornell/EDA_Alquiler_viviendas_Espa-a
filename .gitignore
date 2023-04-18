@@ -1,0 +1,9 @@
+#Carpetas con las bases de datos sin procesar
+/src/data/raw/
+
+#Documentos de texto
+*.docx
+*.doc
+
+#Archivo ds_store
+*.DS_Store
