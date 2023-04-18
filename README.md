@@ -1,7 +1,9 @@
 # EDA_Alquiler_viviendas_España 
   
+----
 Se presenta un Análisis Exploratorio de Datos de el precio del alquiler por metro cuadrado de viviendas colectivas y unifamiliares y rurales en España.  
-  
+----
+
 Las bases de datos utilizadas para la producción de este EDA fueron las siguientes:  
 1. Datos de viviendas en alquiler por municipios:
     
