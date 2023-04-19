@@ -7,3 +7,6 @@
 
 #Archivo ds_store
 *.DS_Store
+
+#Documentos temporales
+~$*
