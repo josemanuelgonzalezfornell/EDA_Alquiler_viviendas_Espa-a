@@ -44,13 +44,13 @@ def get_outliers(df):
 # Cambia los outliers de un dataframe
 def change_outliers(df):
     """
-    Transforma los outliers en el máximo y el mínimo de cada columna dependiendo de si está por encima del máximo o por debajo del mínimo respectivamente.
+    Transforma los outliers en la media de cada columna
 
     args:
         list_series: lista de series o dataframes
 
     reutrns:
-        Copia del DataFrame sin outputs
+        Copia del DataFrame sin outliers
 
     """
     df_copy = df.copy()
@@ -63,10 +63,9 @@ def change_outliers(df):
             IQR = Q3 - Q1
             minimum = Q1 - (1.5 * IQR)
             maximum = Q3 + (1.5 * IQR)
+            media_col = df_copy[col].mean()
             df_copy[col] = df_copy[col].transform(
-                lambda x: np.where(x < minimum, minimum, x))
-            df_copy[col] = df_copy[col].transform(
-                lambda x: np.where(x > maximum, maximum, x))
+                lambda x: np.where(x < minimum or x > maximum, media_col, x))
 
     return df_copy
 
