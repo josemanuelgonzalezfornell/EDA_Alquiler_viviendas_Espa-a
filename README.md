@@ -2,7 +2,7 @@
   
 ----
 
-## Se presenta un Análisis Exploratorio de Datos de el precio del alquiler por metro cuadrado de viviendas colectivas y unifamiliares y rurales en España  
+## Se presenta un Análisis Exploratorio de Datos del precio del alquiler por metro cuadrado de viviendas colectivas y unifamiliares y rurales en España  
 
 ----
 
